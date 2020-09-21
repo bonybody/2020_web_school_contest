@@ -49,6 +49,8 @@ export default {
 .bg_wrap {
   position: fixed;
   background-image: url("~@/assets/images/bg_sub.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   background-color: rgb(10, 17, 38);
   background-blend-mode: overlay;
   z-index: 0;
