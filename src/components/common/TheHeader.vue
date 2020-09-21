@@ -49,6 +49,11 @@ span {
   font-family: YuMincho, 'Yu Mincho',serif;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 nav a {
   margin: 0 10px;
 }
