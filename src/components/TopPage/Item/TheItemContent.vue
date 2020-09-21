@@ -39,7 +39,7 @@
 
 <script>
 export default {
-  name: "TheItemsSectionItem",
+  name: "TheItemContent",
   props: {
     item_content: {
       type: Object,
@@ -63,7 +63,7 @@ export default {
   left: 15px;
   width: 100%;
   height: 100%;
-  background-color: rgba(90, 75, 96,0.7);
+  background-color: rgba(90, 75, 96,0.5);
 }
 
 .item_back_icon {
