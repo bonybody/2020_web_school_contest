@@ -1,30 +1,20 @@
 <template>
   <div id="app">
-    <div class="bg_wrap"></div>
+    <div class="bg_primary"></div>
     <div class="bg_sub_wrap"></div>
     <div class="wrap">
       <the-header/>
       <the-top/>
       <div class="space"/>
-      <scroll-fade-in>
         <the-about/>
-      </scroll-fade-in>
       <div class="space"/>
-      <scroll-fade-in>
         <the-item/>
-      </scroll-fade-in>
       <div class="space"/>
-      <scroll-fade-in>
         <the-quality/>
-      </scroll-fade-in>
       <div class="space"/>
-      <scroll-fade-in>
         <the-news/>
-      </scroll-fade-in>
       <div class="space"/>
-      <scroll-fade-in>
         <the-contact></the-contact>
-      </scroll-fade-in>
       <div class="space"/>
       <the-footer/>
     </div>
@@ -53,16 +43,10 @@ export default {
   font-family: YuMincho, 'Yu Mincho';
   position: relative;
   width: 100%;
-  height: fit-content;
-  /*background-image: url("~@/assets/images/paper_bg.jpg");*/
-  /*background-color: rgb(10, 17, 38);*/
-  /*background-blend-mode: overlay;*/
-  /*background-size: cover;*/
-  /*background-attachment: fixed;*/
-  color: #ffffff;
+  margin: 0 auto;
 }
 
-.bg_wrap {
+.bg_primary {
   position: fixed;
   z-index: 1;
   top: 0;
@@ -70,7 +54,7 @@ export default {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url("~@/assets/images/paper_bg.jpg");
   background-color: rgb(10, 17, 38);
   background-blend-mode: overlay;
@@ -88,9 +72,9 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
-  height: 90vh;
-  width: 95vw;
+  margin: 0 auto;
+  height: 95vh;
+  width: 90%;
   opacity: 0.1;
 }
 .wrap {

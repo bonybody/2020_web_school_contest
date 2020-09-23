@@ -1,10 +1,14 @@
 <template>
+  <scroll-fade-in>
   <h2><slot></slot></h2>
+  </scroll-fade-in>
 </template>
 
 <script>
+import ScrollFadeIn from "@/components/common/ScrollFadeIn";
 export default {
-  name: "SectionHeader"
+  name: "SectionHeader",
+  components: {ScrollFadeIn}
 }
 </script>
 

@@ -3,10 +3,9 @@
       :class="{ effect_fade: !isVisible, effect_scroll: isVisible }"
       v-observe-visibility=" {
         callback: visibilityChanged,
-        once: true,
         intersection: {
           root: null,
-          rootMargin: '0px 0px -10% 0px',
+          rootMargin: '20% 0px -20% 0px',
           threshold: 0
         }
       } ">
@@ -38,13 +37,14 @@ export default {
 
 <style scoped>
 .effect_fade {
-  opacity : 0;
-  transform : translate(0, 45px);
+  opacity : 0.5;
+  transition : all 700ms;
+  transform : translateX(20px);
 }
 
 .effect_scroll {
   opacity : 1;
-  transition : all 500ms;
-  transform : translate(0, 0);
+  transition : all 700ms;
+  transform : translateX(0);
 }
 </style>

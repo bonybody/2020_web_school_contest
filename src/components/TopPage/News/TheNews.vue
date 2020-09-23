@@ -2,27 +2,30 @@
   <div id="news">
     <section-header>お知らせ</section-header>
     <div class="news_item" v-for="news_content in news_contents" :key="news_content.id">
-      <div class="news_item_back_ground">
-      </div>
-      <div class="news_item_frame"></div>
-      <div class="news_item_content">
-        <p class="news_item_content_date">
-          {{ news_content.date }}
-        </p>
-        <p class="news_item_content_title">
-          {{ news_content.title }}
-        </p>
-      </div>
+      <scroll-fade-in>
+        <div class="news_item_back_ground">
+        </div>
+        <div class="news_item_frame"></div>
+        <div class="news_item_content">
+          <p class="news_item_content_date">
+            {{ news_content.date }}
+          </p>
+          <p class="news_item_content_title">
+            {{ news_content.title }}
+          </p>
+        </div>
+      </scroll-fade-in>
     </div>
-
   </div>
 </template>
 
 <script>
 import SectionHeader from "../../common/SectionHeader";
+import ScrollFadeIn from "@/components/common/ScrollFadeIn";
+
 export default {
   name: "TheNews",
-  components: {SectionHeader},
+  components: {ScrollFadeIn, SectionHeader},
   data: () => {
     return {
       news_contents: [
@@ -41,7 +44,7 @@ export default {
           date: "2020 09 21",
           title: "Instagramはじめました。"
         },
-      ]
+      ],
     }
   }
 }
@@ -51,6 +54,11 @@ export default {
 #news {
   color: #fff;
   text-align: left;
+}
+
+.news_wrap {
+  width: fit-content;
+  margin: auto;
 }
 
 .news_item {

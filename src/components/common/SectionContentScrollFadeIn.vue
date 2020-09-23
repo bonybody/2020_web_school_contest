@@ -1,7 +1,7 @@
 
 <template>
   <div
-      :class="{ effect_fade: !isVisible, effect_scroll: isVisible }"
+      :class="{ effect_fade_content: !isVisible, effect_scroll_content: isVisible }"
       v-observe-visibility=" {
         callback: visibilityChanged,
         fromBottom: true,
@@ -38,15 +38,15 @@ export default {
 </script>
 
 <style scoped>
-.effect_fade {
-  opacity : 0;
+.effect_fade_content {
+  opacity : 0.2;
   transition : all 600ms;
-  transform : translate(0, 45px);
+  transform : translateY(20px);
 }
 
-.effect_scroll {
+.effect_scroll_content {
   opacity : 1;
-  transition : all 1000ms;
-  transform : translate(0, 0);
+  transition : all 600ms;
+  transform : translateY(20);
 }
 </style>

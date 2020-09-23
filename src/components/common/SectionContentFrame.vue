@@ -1,24 +1,21 @@
 <template>
-  <div class="content">
-    <div class="content_back_ground" v-prlx.mobile="{
-      direction: 'x',
-      speed: 0.1,
-      limit: { min: -10, max:10},
-      preserveInitialPosition: false,
-      mobileMaxWidth: 50
-    }">
+  <div class="content" :class="{ effect_fade: !isVisible, effect_scroll: isVisible }"
+       v-observe-visibility=" {
+        callback: visibilityChanged,
+        fromBottom: true,
+        intersection: {
+          root: null,
+          rootMargin: '-40% 0px -40% 0px',
+          threshold: 0
+        }
+      } ">
+    <div class="content_back_ground">
     </div>
-    <div class="content_back_icon">
+    <div  class="content_back_icon">
       <img src="@/assets/images/花アイコン.svg" alt="花">
     </div>
-    <div class="content_frame" v-prlx.mobile="{
-      direction: 'x',
-      reverse: true,
-      speed: 0.1,
-      limit: { min: -10, max: 10},
-      preserveInitialPosition: false,
-      mobileMaxWidth: 50
-    }"></div>
+    <div
+        class="content_frame"></div>
     <div class="content_value">
       <section-content-scroll-fade-in>
         <slot></slot>
@@ -33,14 +30,26 @@ import SectionContentScrollFadeIn from "@/components/common/SectionContentScroll
 
 export default {
   name: "SectionContentFrame",
-  components: {SectionContentScrollFadeIn, ScrollFadeIn}
+  components: {SectionContentScrollFadeIn, ScrollFadeIn},
+  data: () => {
+    return {
+      isVisible: false
+    }
+  },
+  methods: {
+    visibilityChanged (isVisible, entry) {
+      this.isVisible = isVisible
+      console.log(entry, isVisible)
+    }
+  }
+
 }
 </script>
 
 <style scoped>
 .content {
   position: relative;
-  width: 80vw;
+  width: 75vw;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
@@ -51,7 +60,7 @@ export default {
   position: absolute;
   z-index: 2;
   top: 20px;
-  left: 0;
+  left: 20px;
   width: 100%;
   height: 100%;
   background-color: rgba(90, 95, 119, 0.5);
@@ -82,6 +91,18 @@ export default {
   position: relative;
   z-index: 4;
   width: 100%;
+}
+
+.effect_fade {
+  opacity : 0.5;
+  transition : all 600ms;
+  transform : translateX(20px);
+}
+
+.effect_scroll {
+  opacity : 1;
+  transition : all 600ms;
+  transform : translateX(0);
 }
 
 </style>
