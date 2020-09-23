@@ -1,21 +1,24 @@
 <template>
   <div id="news">
     <section-header>お知らせ</section-header>
+    <scroll-fade-in>
     <div class="news_item" v-for="news_content in news_contents" :key="news_content.id">
-      <scroll-fade-in>
         <div class="news_item_back_ground">
         </div>
         <div class="news_item_frame"></div>
+        <div class="show hover_bg"></div>
         <div class="news_item_content">
-          <p class="news_item_content_date">
+          <span class="news_item_content_date">
             {{ news_content.date }}
-          </p>
-          <p class="news_item_content_title">
+          </span>
+          <span class="news_item_content_title">
             {{ news_content.title }}
-          </p>
+          </span>
+          <p class="cursor">＞＞</p>
         </div>
-      </scroll-fade-in>
     </div>
+    </scroll-fade-in>
+
   </div>
 </template>
 
@@ -43,17 +46,7 @@ export default {
           id: 3,
           date: "2020 08 12",
           title: "Instagramはじめました。"
-        },
-        {
-          id: 4,
-          date: "2020 07 01",
-          title: "熱中症にお気をつけください。"
-        },
-        {
-          id: 5,
-          date: "2020 06 24",
-          title: "季節限定メニュー更新のお知らせ。"
-        },
+        }
       ],
     }
   }
@@ -64,6 +57,8 @@ export default {
 #news {
   color: #fff;
   text-align: left;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .news_wrap {
@@ -74,10 +69,13 @@ export default {
 .news_item {
   position: relative;
   width: 80vw;
-  max-width: 900px;
+  max-width: 800px;
   margin: 30px auto;
   color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
+
 
 .news_item_back_ground {
   position: absolute;
@@ -98,9 +96,19 @@ export default {
   box-sizing: border-box;
 }
 
-.news_item_content {
-  display: flex;
+.hover_bg {
+  transition: all 0.3s ease-out;
+}
 
+.news_item:hover .hover_bg {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.news_item_content {
   padding: 30px 0;
   position: relative;
   z-index: 4;
@@ -113,6 +121,20 @@ export default {
 }
 
 .news_item_content_title {
+}
+
+.button button::after {
+  opacity: 0;
+}
+
+.news_item:hover .cursor {
+  opacity: 1;
+}
+
+.cursor {
+  float: right;
+  opacity: 0;
+  transition: all 0.3s ease-out;
 }
 
 </style>

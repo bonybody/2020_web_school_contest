@@ -5,7 +5,7 @@
         callback: visibilityChanged,
         intersection: {
           root: null,
-          rootMargin: '-40% 0px -40% 0px',
+          rootMargin: '-35% 0px -35% 0px',
           threshold: 0
         }
       } ">
@@ -42,9 +42,28 @@ export default {
   transform : translateX(20px);
 }
 
+.effect_fade .cursor {
+  display: none;
+  transition : all 700ms;
+}
+
+.effect_fade .show {
+  display: none;
+}
+
 .effect_scroll {
   opacity : 1;
   transition : all 700ms;
   transform : translateX(0);
 }
+
+.effect_scroll .cursor {
+  display: inline;
+  transition : all 700ms;
+}
+
+.effect_scroll .show {
+  display: block;
+}
+
 </style>
