@@ -70,7 +70,7 @@ export default {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url("~@/assets/images/paper_bg.jpg");
   background-color: rgb(10, 17, 38);
   background-blend-mode: overlay;
