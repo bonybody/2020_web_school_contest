@@ -42,7 +42,7 @@ export default {
 #app {
   font-family: YuMincho, 'Yu Mincho';
   position: relative;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -80,6 +80,7 @@ export default {
 .wrap {
   position: relative;
   z-index: 100;
+  width: 100%;
 }
 
 .space {

@@ -2,11 +2,11 @@
 <header>
   <h1><img class="header_logo" src="@/assets/images/hana_icon.png" alt="header_logo"><span class="header_title">HAMCO</span></h1>
   <nav>
-    <a v-scroll-to="'#top'" href="#top">概要</a>
+    <a v-scroll-to="'#top'" href="#top">TOP</a>
     <a v-scroll-to="'#about'" href="#about">概要</a>
     <a v-scroll-to="'#item'" href="#item">商品</a>
     <a v-scroll-to="{ element: '#quality', offset: -100 }" href="#quality">こだわり</a>
-    <a v-scroll-to="'#news'" href="#news">お知らせ</a>
+    <a v-scroll-to="{ element: '#news', offset: -200 }" href="#news">お知らせ</a>
     <a v-scroll-to="'#contact'" href="#contact">お問い合わせ</a>
   </nav>
 </header>

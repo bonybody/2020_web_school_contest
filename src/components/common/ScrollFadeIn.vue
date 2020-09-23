@@ -5,7 +5,7 @@
         callback: visibilityChanged,
         intersection: {
           root: null,
-          rootMargin: '20% 0px -20% 0px',
+          rootMargin: '-40% 0px -40% 0px',
           threshold: 0
         }
       } ">
@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 .effect_fade {
-  opacity : 0.5;
+  opacity : 0.3;
   transition : all 700ms;
   transform : translateX(20px);
 }
