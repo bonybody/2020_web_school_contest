@@ -42,7 +42,7 @@ export default {
 #app {
   font-family: YuMincho, 'Yu Mincho';
   position: relative;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
 }
 
