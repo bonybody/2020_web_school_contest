@@ -53,7 +53,7 @@ export default {
 }
 
 .item {
-  margin: 0 auto 100px auto;
+  margin: 0 auto 200px auto;
 }
 
 

@@ -1,45 +1,40 @@
 <template>
   <div class="item">
-    <div class="item_content">
-      <div class="item_back_ground" v-prlx.mobile="{
-  preserveInitialPosition: false,
-  limit: { min: -30, max: 30 },
-  speed: 0.03,
-}"></div>
-      <div class="item_back_icon" v-prlx.mobile="{
-  preserveInitialPosition: false,
-  limit: { min: -100, max: 30 },
-  speed: 0.03,
-}"><img src="@/assets/images/花アイコン.svg" alt="花"></div>
-      <div class="item_content_frame"></div>
-      <p class="item_content_image" v-prlx.mobile=" {
+    <section-content-frame>
+      <div class="item_content">
+        <p class="item_content_image" v-prlx.mobile=" {
            preserveInitialPosition: false,
            limit: { min: -30, max: 30 },
            speed: 0.03,
            reverse: true
            }
       "><img :src="item_content.image" :alt="item_content.title"></p>
-      <div class="item_content_detail" v-prlx.mobile="{
+        <div class="item_content_detail" v-prlx.mobile="{
   preserveInitialPosition: false,
   limit: { min: -30, max: 30 },
   speed: 0.03,
   reverse: true
 }">
-        <h4>
-          <img :src=" item_content.title_icon
+          <h4>
+            <img :src=" item_content.title_icon
       " alt="title_image">
-          <span>{{ item_content.title }}</span>
-        </h4>
-        <p class="description"><span>{{ item_content.description }}</span></p>
-        <button>一覧へ</button>
+            <span>{{ item_content.title }}</span>
+          </h4>
+          <p class="description"><span>{{ item_content.description }}</span></p>
+          <app-button>一覧へ</app-button>
+        </div>
       </div>
-    </div>
+    </section-content-frame>
   </div>
 </template>
 
 <script>
+import AppButton from "@/components/common/AppButton";
+import SectionContentFrame from "@/components/common/SectionContentFrame";
+
 export default {
   name: "TheItemContent",
+  components: {SectionContentFrame, AppButton},
   props: {
     item_content: {
       type: Object,
@@ -63,7 +58,7 @@ export default {
   left: 15px;
   width: 100%;
   height: 100%;
-  background-color: rgba(90, 75, 96,0.5);
+  background-color: rgba(90, 95, 119, 0.8);
 }
 
 .item_back_icon {
@@ -118,7 +113,7 @@ export default {
 .item_content_detail {
   z-index: 26;
   padding: 30px 0;
-  width: 300px;
+  width: 250px;
   text-align: center;
 }
 

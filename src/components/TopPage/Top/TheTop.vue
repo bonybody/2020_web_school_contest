@@ -1,11 +1,16 @@
 <template>
   <div id="top">
-    <div class="primary_content">
-      <div class="primary_content_frame"><img src="@/assets/images/hanko_frame.svg" alt="フレーム"></div>
-      <img class="primary_content_image primary_content_image_up" src="@/assets/images/hanko_up.png" alt="hanko_up">
-      <span class="primary_content_text">はんこ、押していますか?</span>
-      <img class="primary_content_image primary_content_image_down" src="@/assets/images/hanko_down.png" alt="hanko_down">
-    </div>
+    <transition appear name="fade">
+      <div class="primary_content">
+        <div class="primary_content_frame"><img src="@/assets/images/hanko_frame.svg" alt="フレーム"></div>
+        <img class="primary_content_image primary_content_image_up" src="@/assets/images/hanko_up.png" alt="hanko_up">
+        <transition appear name="slide-fade">
+          <span class="primary_content_text">はんこ、押していますか?</span>
+        </transition>
+        <img class="primary_content_image primary_content_image_down" src="@/assets/images/hanko_down.png"
+             alt="hanko_down">
+      </div>
+    </transition>
     <the-top-scroll-down></the-top-scroll-down>
   </div>
 </template>
@@ -15,7 +20,12 @@ import TheTopScrollDown from "./TheTopScrollDown";
 
 export default {
   name: "TheTop",
-  components: {TheTopScrollDown}
+  components: {TheTopScrollDown},
+  data: () => {
+    return {
+      visible: false,
+    }
+  }
 }
 </script>
 
@@ -32,9 +42,9 @@ export default {
 
 .primary_content {
   width: 80vw;
-  max-width: 800px;
+  max-width: 80vh;
   height: 80vw;
-  max-height: 800px;
+  max-height: 80vh;
   position: absolute;
   top: 0;
   right: 0;
@@ -82,4 +92,23 @@ export default {
   font-size: clamp(1rem, 5vw, 3rem);
 }
 
+
+.fade-enter-active {
+  transition: all 1.5s ease;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+
+.slide-fade-enter-active {
+  transition: all 1.5s ease;
+}
+
+.slide-fade-enter {
+  transform: translateX(50px);
+  opacity: 0;
+}
 </style>

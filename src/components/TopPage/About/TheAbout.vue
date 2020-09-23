@@ -30,5 +30,7 @@ export default {
 
 .about {
   line-height: 2rem;
+  margin: 0 30px;
+
 }
 </style>
