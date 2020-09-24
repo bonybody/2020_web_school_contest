@@ -56,6 +56,32 @@ nav {
 }
 
 nav a {
-  margin: 0 10px;
+  text-align: center;
+  width: 100px;
+  padding: 10px 0;
+  position: relative;
+  z-index: 105;
+  transition: all 0.3s ease-out;
+}
+
+nav a::after {
+  position: absolute;
+  z-index: 101;
+  content: "";
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: #fff;
+  transition: all 0.3s ease-in;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  text-shadow: white 2px 2px 2px;
 }
 </style>

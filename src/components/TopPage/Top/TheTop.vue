@@ -3,7 +3,7 @@
     <transition appear name="fade">
       <div class="primary_content">
         <div class="primary_content_frame"><img src="@/assets/images/hanko_frame.svg" alt="フレーム"></div>
-        <img class="primary_content_image primary_content_image_up" src="@/assets/images/hanko_up.png" alt="hanko_up">
+        <img class="primary_content_image primary_content_image_up" src="@/assets/images/hanko_up_test.png" alt="hanko_up">
         <transition appear name="slide-fade">
           <span class="primary_content_text">はんこ、押していますか?</span>
         </transition>
