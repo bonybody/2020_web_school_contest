@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .on_content {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(100,100,100,0.7);
   box-shadow: 0px 1px 3px -3px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0px 1px 3px -3px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 1px 3px -3px rgba(0,0,0,0.2);

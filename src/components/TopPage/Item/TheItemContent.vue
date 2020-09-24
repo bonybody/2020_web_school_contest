@@ -21,7 +21,7 @@
             <span>{{ item_content.title }}</span>
           </h4>
           <p class="description"><span>{{ item_content.description }}</span></p>
-          <app-button>一覧へ</app-button>
+          <app-button @app_button_click="$emit('click_button')">一覧へ</app-button>
         </div>
       </div>
     </section-content-frame>
