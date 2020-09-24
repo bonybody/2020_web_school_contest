@@ -114,7 +114,7 @@ export default {
 }
 
 .slide-fade-enter {
-  transform: translateX(50px);
+  transform: translatey(100px);
   opacity: 0;
 }
 </style>

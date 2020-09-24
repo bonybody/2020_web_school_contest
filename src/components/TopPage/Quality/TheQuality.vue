@@ -6,12 +6,12 @@
         確かな品質
       </p>
       <p class="quality_item_content_description">
-        確かに印鑑を彫刻させていただくために、
+        確かに印鑑を彫刻させて頂くために、
         印材選びに慎重で、自信を持ってオススメ
         できる印材のみを扱っており、「チタン印鑑」
         などは材質の特性上、手彫りができませんので
         扱っておりません。<br>
-        同じような印材の中でも厳選した印材(仕入れた印材を
+        同じような印材の中でも厳選した<br>印材(仕入れた印材)を
         選りすぐり半分以上は返品・交換しています）で確かな
         彫刻をするという「HAMCO」の品質基準でございます。
       </p>
@@ -58,6 +58,7 @@ export default {
 .quality_item_content_description {
   margin: 15px auto;
   max-width: 600px;
+  width: 90%;
   line-height: 2rem;
   font-size: 14px;
   word-break: keep-all;
