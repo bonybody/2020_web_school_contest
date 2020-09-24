@@ -12,6 +12,8 @@
       <div class="space"/>
         <the-quality/>
       <div class="space"/>
+      <the-shop/>
+      <div class="space"/>
         <the-news/>
       <div class="space"/>
         <the-contact></the-contact>
@@ -31,10 +33,11 @@ import TheFooter from "./components/common/TheFooter";
 import TheNews from "./components/TopPage/News/TheNews";
 import TheContact from "@/components/TopPage/Contact/TheContact";
 import ScrollFadeIn from "@/components/common/ScrollFadeIn";
+import TheShop from "@/components/TopPage/shop/TheShop";
 
 export default {
   name: 'App',
-  components: {ScrollFadeIn, TheContact, TheNews, TheFooter, TheAbout, TheQuality, TheItem, TheTop, TheHeader}
+  components: {TheShop, ScrollFadeIn, TheContact, TheNews, TheFooter, TheAbout, TheQuality, TheItem, TheTop, TheHeader}
 }
 </script>
 
@@ -56,7 +59,7 @@ export default {
   width: 100%;
   height: 100%;
   background-image: url("~@/assets/images/paper_bg.jpg");
-  background-color: rgb(10, 17, 38);
+  background-color: rgb(20, 27, 68);
   background-blend-mode: overlay;
   background-size: cover;
 }
@@ -66,15 +69,15 @@ export default {
   z-index: 1;
   background-image: url("~@/assets/images/bg_sub.jpg");
   background-size: cover;
-  background-color: rgb(10, 17, 38);
+  background-color: rgb(20, 27, 48);
   background-blend-mode: overlay;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 0 auto;
-  height: 95vh;
-  width: 90%;
+  margin: auto;
+  height: 90vh;
+  width: 95%;
   opacity: 0.1;
 }
 .wrap {

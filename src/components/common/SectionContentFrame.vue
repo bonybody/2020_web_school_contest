@@ -50,6 +50,7 @@ export default {
   position: relative;
   width: 75vw;
   max-width: 900px;
+  height: fit-content;
   margin: 0 auto;
   text-align: center;
   color: #fff;
@@ -66,15 +67,20 @@ export default {
 }
 
 .content_back_icon {
+  opacity: 0.4;
   position: absolute;
   z-index: 2;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100px;
-  height: 100px;
+  height: 80%;
+  max-height: 50vw;
   margin: auto;
+}
+
+.content_back_icon img {
+  height: 100%;
 }
 
 .content_frame {

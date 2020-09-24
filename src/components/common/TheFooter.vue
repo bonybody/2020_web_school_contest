@@ -7,6 +7,7 @@
         <a v-scroll-to="'#about'" href="#about">概要</a>
         <a v-scroll-to="'#item'" href="#item">商品</a>
         <a v-scroll-to="'#quality'" href="#quality">こだわり</a>
+        <a v-scroll-to="'#shop'" href="#shop">ショップ</a>
         <a v-scroll-to="'#news'" href="#news">お知らせ</a>
         <a v-scroll-to="'#contact'" href="#contact">お問い合わせ</a>
       </div>

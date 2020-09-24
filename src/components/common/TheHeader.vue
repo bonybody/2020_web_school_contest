@@ -12,6 +12,9 @@
       <div class="partition_border"></div>
       <a v-scroll-to="'#quality'" href="#quality">こだわり</a>
       <div class="partition_border"></div>
+      <div class="partition_border"></div>
+      <a v-scroll-to="'#shop'" href="#quality">ショップ</a>
+      <div class="partition_border"></div>
       <a v-scroll-to="'#news'" href="#news">お知らせ</a>
       <div class="partition_border"></div>
       <a v-scroll-to="'#contact'" href="#contact">お問い合わせ</a>
@@ -41,8 +44,8 @@ export default {
 
 <style scoped>
 .on_content {
-  background-color: rgba(100,100,100,0.7);
-  box-shadow: 0px 1px 3px -3px rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 3px -3px rgba(0,0,0,0.5);
   -webkit-box-shadow: 0px 1px 3px -3px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 1px 3px -3px rgba(0,0,0,0.2);
 }
@@ -99,8 +102,8 @@ nav {
 nav a {
   text-align: center;
   width: 100px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   margin: 0 10px;
   position: relative;
   z-index: 105;
