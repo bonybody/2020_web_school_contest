@@ -33,19 +33,19 @@ export default {
 
 .contact_content {
   padding: 50px;
-  width: fit-content;
+  min-width: fit-content;
+  width: 100%;
   margin: 0 auto;
   border-radius: 10px;
 }
 
 .contact_content .label {
-  text-align: left;
-  margin: 10px 0;
+  text-align: center;
+  margin: 10px auto;
 }
 
 
 input, textarea {
-  width: 100%;
   background-color: #fff;
   border-radius: 5%;
   color: #000;

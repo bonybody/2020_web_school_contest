@@ -3,20 +3,24 @@
     <div class="links">
       <h2 class="links_head">サイト内リンク</h2>
       <div class="links_url">
-        <a href="#top">トップ</a>
-        <a href="#about">商品</a>
-        <a href="#item">こだわり</a>
-        <a href="#quality">店舗・アクセス</a>
-        <a href="#quality">お問い合わせ</a>
+        <a v-scroll-to="'#top'" href="#top">TOP</a>
+        <a v-scroll-to="'#about'" href="#about">概要</a>
+        <a v-scroll-to="'#item'" href="#item">商品</a>
+        <a v-scroll-to="'#quality'" href="#quality">こだわり</a>
+        <a v-scroll-to="'#news'" href="#news">お知らせ</a>
+        <a v-scroll-to="'#contact'" href="#contact">お問い合わせ</a>
       </div>
     </div>
-    <div class=""></div>
+    <section-header>HAMCO</section-header>
+    <div class="copyright">&copy; 2020 HAMCO.</div>
   </footer>
 </template>
 
 <script>
+import SectionHeader from "@/components/common/SectionHeader";
 export default {
-  name: "TheFooter"
+  name: "TheFooter",
+  components: {SectionHeader}
 }
 </script>
 
@@ -29,6 +33,9 @@ footer {
   text-align: center;
   padding: 50px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .links {

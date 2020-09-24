@@ -3,7 +3,8 @@
     <transition appear name="fade">
       <div class="primary_content">
         <div class="primary_content_frame"><img src="@/assets/images/hanko_frame.svg" alt="フレーム"></div>
-        <img class="primary_content_image primary_content_image_up" src="@/assets/images/hanko_up_test.png" alt="hanko_up">
+        <img class="primary_content_image primary_content_image_up" src="@/assets/images/hanko_up_test.png"
+             alt="hanko_up">
         <transition appear name="slide-fade">
           <span class="primary_content_text">はんこ、押していますか?</span>
         </transition>
@@ -92,6 +93,11 @@ export default {
   font-size: clamp(1rem, 5vw, 3rem);
 }
 
+@media screen and (max-height: 768px) and (max-width: 1366px) {
+  .primary_content_text {
+    font-size: 2rem;
+  }
+}
 
 .fade-enter-active {
   transition: all 1.5s ease;

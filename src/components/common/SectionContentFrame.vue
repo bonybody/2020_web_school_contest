@@ -39,7 +39,6 @@ export default {
   methods: {
     visibilityChanged (isVisible, entry) {
       this.isVisible = isVisible
-      console.log(entry, isVisible)
     }
   }
 

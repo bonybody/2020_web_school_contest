@@ -1,5 +1,5 @@
 <template>
-  <a class="scroll js-scroll" href="#about"><p class="border_1"></p><p class="border_2"></p></a>
+  <a class="scroll js-scroll" v-scroll-to="'#about'" href="#about"><p class="border_1"></p><p class="border_2"></p></a>
 </template>
 
 <script>
