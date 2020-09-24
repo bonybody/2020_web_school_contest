@@ -66,7 +66,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 30px;
+  padding: 10px;
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
@@ -97,6 +97,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+@media screen and (min-width: 0) and (max-width: 1023px){
+  nav {
+    display: none;
+  }
 }
 
 nav a {

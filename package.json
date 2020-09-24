@@ -21,8 +21,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
+    "defaults"
   ]
 }
