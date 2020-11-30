@@ -1,5 +1,5 @@
 # hamco
-
+- [Live demo](https://bonybody.github.io/2020_web_school_contest/)
 ## Project setup
 ```
 yarn install

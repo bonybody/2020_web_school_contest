@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import SectionHeader from "../../common/SectionHeader";
+import SectionHeader from "@/components/common/SectionHeader";
 import SectionContentFrame from "@/components/common/SectionContentFrame";
 import AppButton from "@/components/common/AppButton";
 

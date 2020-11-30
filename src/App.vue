@@ -24,13 +24,13 @@
 </template>
 
 <script>
-import TheHeader from "./components/common/TheHeader";
-import TheTop from "./components/TopPage/Top/TheTop";
-import TheItem from "./components/TopPage/Item/TheItem";
-import TheQuality from "./components/TopPage/Quality/TheQuality";
-import TheAbout from "./components/TopPage/About/TheAbout";
-import TheFooter from "./components/common/TheFooter";
-import TheNews from "./components/TopPage/News/TheNews";
+import TheHeader from "@/components/common/TheHeader";
+import TheTop from "@/components/TopPage/Top/TheTop";
+import TheItem from "@/components/TopPage/Item/TheItem";
+import TheQuality from "@/components/TopPage/Quality/TheQuality";
+import TheAbout from "@/components/TopPage/About/TheAbout";
+import TheFooter from "@/components/common/TheFooter";
+import TheNews from "@/components/TopPage/News/TheNews";
 import TheContact from "@/components/TopPage/Contact/TheContact";
 import ScrollFadeIn from "@/components/common/ScrollFadeIn";
 import TheShop from "@/components/TopPage/shop/TheShop";

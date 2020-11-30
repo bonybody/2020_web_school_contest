@@ -6,18 +6,18 @@
            preserveInitialPosition: false,
            limit: { min: -30, max: 30 },
            speed: 0.03,
-           reverse: true
-           }
-      "><img :src="item_content.image" :alt="item_content.title"></p>
+           reverse: true }"
+        >
+          <img :src="item_content.image" :alt="item_content.title">
+        </p>
         <div class="item_content_detail" v-prlx.mobile="{
-  preserveInitialPosition: false,
-  limit: { min: -30, max: 30 },
-  speed: 0.03,
-  reverse: true
-}">
+          preserveInitialPosition: false,
+          limit: { min: -30, max: 30 },
+          speed: 0.03,
+          reverse: true
+        }">
           <h4>
-            <img :src=" item_content.title_icon
-      " alt="title_image">
+            <img :src=" item_content.title_icon" alt="title_image">
             <span>{{ item_content.title }}</span>
           </h4>
           <p class="description"><span>{{ item_content.description }}</span></p>
