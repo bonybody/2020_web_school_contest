@@ -76,7 +76,7 @@ export default {
   bottom: 0;
   left: 0;
   margin: auto;
-  height: 90vh;
+  height: 1000px;
   width: 95%;
   opacity: 0.1;
 }

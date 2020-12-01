@@ -5,7 +5,7 @@
         fromBottom: true,
         intersection: {
           root: null,
-          rootMargin: '-40% 0px -40% 0px',
+          rootMargin: '-30% 0px -30% 0px',
           threshold: 0
         }
       } ">
