@@ -55,7 +55,7 @@ footer {
 }
 .links_url a {
   display: block;
-  margin: 0 30px;
+  margin: 0.8em;
   text-align: left;
 }
 

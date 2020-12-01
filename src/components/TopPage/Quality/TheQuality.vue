@@ -58,9 +58,10 @@ export default {
 .quality_item_content_description {
   margin: 15px auto;
   max-width: 600px;
-  width: 90%;
+  min-width: 250px;
+  width: 70%;
   line-height: 2rem;
   font-size: 14px;
-  word-break: keep-all;
+  word-break: break-all;
 }
 </style>
