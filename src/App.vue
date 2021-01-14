@@ -46,6 +46,7 @@ export default {
   font-family: YuMincho, 'Yu Mincho';
   position: relative;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -76,7 +77,7 @@ export default {
   bottom: 0;
   left: 0;
   margin: auto;
-  height: 1000px;
+  height: 90%;
   width: 95%;
   opacity: 0.1;
 }
@@ -84,6 +85,7 @@ export default {
   position: relative;
   z-index: 100;
   width: 100%;
+  height: 100%;
 }
 
 .space {

@@ -35,7 +35,7 @@ export default {
   position: relative;
   z-index: 10;
   width: 100%;
-  height: 95vh;
+  height: 100%;
   /*background-image: url("~@/assets/images/paper_bg.jpg");*/
   /*background-color: rgba(25, 29, 50, 0.9);*/
   /*background-blend-mode: overlay;*/
