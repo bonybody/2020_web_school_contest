@@ -90,10 +90,17 @@ export default {
   width: fit-content;
   height: fit-content;
   color: #fff;
-  font-size: clamp(1rem, 5vw, 3rem);
+  font-size: 3rem;
 }
 
-@media screen and (max-height: 768px) and (max-width: 1366px) {
+@media (max-width: 519px) {
+  .primary_content_text {
+    font-size: 1.7rem;
+  }
+}
+
+
+@media (max-width: 959px) {
   .primary_content_text {
     font-size: 2rem;
   }

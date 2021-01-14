@@ -3,7 +3,6 @@
     <h1><img class="header_logo" src="@/assets/images/花アイコン_header.svg" alt="header_logo"><span
         class="header_title">HAMCO</span></h1>
     <nav>
-      <div class="partition_border"></div>
       <a v-scroll-to="'#top'" href="#top">TOP</a>
       <div class="partition_border"></div>
       <a v-scroll-to="'#about'" href="#about">概要</a>
@@ -18,7 +17,6 @@
       <a v-scroll-to="'#news'" href="#news">お知らせ</a>
       <div class="partition_border"></div>
       <a v-scroll-to="'#contact'" href="#contact">お問い合わせ</a>
-      <div class="partition_border"></div>
     </nav>
   </header>
 </template>
