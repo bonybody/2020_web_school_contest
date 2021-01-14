@@ -42,6 +42,16 @@ export default {
 </script>
 
 <style>
+body {
+    background-image: url("~@/assets/images/paper_bg.jpg");
+      background-color: rgb(20, 27, 68);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-attachment: fixed;
+
+
+}
+
 #app {
   font-family: YuMincho, 'Yu Mincho';
   position: relative;
@@ -59,28 +69,8 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("~@/assets/images/paper_bg.jpg");
-  background-color: rgb(20, 27, 68);
-  background-blend-mode: overlay;
-  background-size: cover;
 }
 
-.bg_sub_wrap {
-  position: fixed;
-  z-index: 1;
-  background-image: url("~@/assets/images/bg_sub.jpg");
-  background-size: cover;
-  background-color: rgb(20, 27, 48);
-  background-blend-mode: overlay;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  height: 90%;
-  width: 95%;
-  opacity: 0.1;
-}
 .wrap {
   position: relative;
   z-index: 100;
